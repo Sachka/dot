@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 while true; do
-  read -p "Warning: this script uses predefined paths and could mess up the current shell settings. Continue? [y/n] " yn
+  read -p "Warning: this script uses predefined paths and will mess up the current shell settings. Continue? [y/n] " yn
   case $yn in
     [Yy]* ) break;;
     [Nn]* ) exit;;
@@ -17,6 +17,7 @@ while true; do
     * ) echo "Please answer yes or no.";;
   esac
 done
+rm -rf ~/.zshrc
 ln -s ~/.config/dot/zshrc ~/.zshrc
 
 while true; do
