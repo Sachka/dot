@@ -144,8 +144,8 @@ goback() {
     history | grep $1;
 }
 
-alias defjava8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
-alias defjava9="export JAVA_HOME=`/usr/libexec/java_home -v 9`"
+#alias defjava8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
+#alias defjava9="export JAVA_HOME=`/usr/libexec/java_home -v 9`"
 alias rezsh="source $HOME/.zshrc"
 alias rebash="source $HOME/.bashrc"
 alias retmux="tmux source-file $HOME/.tmux.conf"
