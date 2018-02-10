@@ -16,7 +16,7 @@ if [[ $OS == 'Darwin' ]]; then
         $DOT/extra/terminal/set_dracula;
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
         yes | cp -rf $DOT/extra/prompt/dracula.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -27,7 +27,7 @@ if [[ $OS == 'Darwin' ]]; then
         $DOT/extra/terminal/set_solarized_light;
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
         yes | cp -rf $DOT/extra/prompt/solarized_light.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -38,7 +38,7 @@ if [[ $OS == 'Darwin' ]]; then
         $DOT/extra/terminal/set_solarized_dark;
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
         yes | cp -rf $DOT/extra/prompt/solarized_dark.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -49,7 +49,7 @@ if [[ $OS == 'Darwin' ]]; then
         $DOT/extra/terminal/set_papercolor_dark;
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
         yes | cp -rf $DOT/extra/prompt/papercolor_dark.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -90,7 +90,7 @@ if [[ $OS == 'Linux' ]]; then
     sun() {
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
         yes | cp -rf $DOT/extra/prompt/solarized_light.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -100,7 +100,7 @@ if [[ $OS == 'Linux' ]]; then
     moon() {
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
         yes | cp -rf $DOT/extra/prompt/solarized_dark.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -110,7 +110,7 @@ if [[ $OS == 'Linux' ]]; then
     vampire() {
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
         yes | cp -rf $DOT/extra/prompt/dracula.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
@@ -120,7 +120,7 @@ if [[ $OS == 'Linux' ]]; then
     material() {
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
         yes | cp -rf $DOT/extra/prompt/papercolor_dark.sh $HOME/.prompt;
-        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $DOT/vim/settings/colorscheme.vim;
         if [[ $SHLL =~ 'zsh' ]]; then
             source $HOME/.zshrc;
         elif [[ $SHLL =~ 'bash' ]]; then
