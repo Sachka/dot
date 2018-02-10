@@ -1,6 +1,8 @@
 OS=`uname`
-source $HOME/.prompt
-# If not running interavarrcctively, don't do anything
+if [ -f "$HOME/.prompt" ]; then
+    source $HOME/.prompt
+fi
+# If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;

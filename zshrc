@@ -1,5 +1,7 @@
 OS=`uname`
-source $HOME/.prompt
+if [ -f "$HOME/.prompt" ]; then
+    source $HOME/.prompt
+fi
 # If not running interactively, don't do anything
 #case $- in
     #*i*) ;;
@@ -24,11 +26,11 @@ source $HOME/.prompt
 # Homebrew init
 if [[ $OS == 'Darwin' ]]; then
     if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
-    export ZSH=/Users/Hermes/.oh-my-zsh;
+    export ZSH=$HOME/.oh-my-zsh;
     export CLICOLOR=1;
     plugins=(git osx brew vim python zsh-syntax-highlighting);
 else
-    export ZSH=/home/Hermes/.oh-my-zsh
+    export ZSH=$HOME/.oh-my-zsh
     plugins=(git)
 fi
 
@@ -86,7 +88,10 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 
 # OH MY ZSH DISABLED FOR NOW
-source $ZSH/oh-my-zsh.sh
+if [ -d "$ZSH" ]; then
+    source $ZSH/oh-my-zsh.sh
+fi
+
 
 # User configuration
 
