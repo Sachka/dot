@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# emacs
+emacs.d/elpa/
+
