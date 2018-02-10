@@ -1,0 +1,2 @@
+" Background
+colorscheme dracula
