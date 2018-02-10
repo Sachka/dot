@@ -11,3 +11,4 @@ tmux/plugins
 # vim
 vim/plugins
 vim/plugged
+vim/.netrwhist
