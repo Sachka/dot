@@ -1,0 +1,89 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/Hermes/Desktop/" . "PROJECT/")
+ ("/Users/Hermes/Projects/WordEmbedding-Retrofitting/" . "src/")
+ ("/Users/Hermes/Projects/" . "WordEmbedding-Retrofitting/")
+ ("/Users/" . "Hermes/")
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/" . "Apprentissage Automatique/")
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/" . "TD2/")
+ ("/" . "Users/")
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/" . "Cursus/")
+ ("/Users/Hermes/Library/Mobile Documents/" . "com~apple~CloudDocs/")
+ ("/Users/Hermes/Library/" . "Mobile Documents/")
+ ("/Users/Hermes/.emacs.d/" . "config/")
+ ("/Users/Hermes/" . "Library/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/Hermes/Desktop/PROJECT/"
+ "/Users/Hermes/Projects/WordEmbedding-Retrofitting/src/"
+ "/Users/Hermes/"
+ "/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/TD2/"
+ "/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/TD1/"
+ "/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/"
+ "/"
+ "/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/"
+ "/Users/Hermes/.emacs.d/config/"
+ "/Users/Hermes/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "DataLoader.java"
+ "Retrofitting.java"
+ "WordEmbedding.java"
+ "$SC"
+ "classdoc_perceptron_canevas.py"
+ "classdoc_perceptron.py"
+ "classdoc_knn_canevas.py"
+ "$AA"
+ "$OLDPWD"
+ "$HOME"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/Hermes/" (22986 6692 363450 326000) ".viminfo" ".bash_history" "Home Videos/" ".gvimrc" ".gitconfig" ".inputrc" ".cache/" ".python_history" "Downloads/" ".oh-my-zsh/" ".Xauthority" ".kite/" ".gem/" ".bash_profile" ".alacritty.yml" ".m2/" ".rstudio-desktop/" ".tmux/" ".swt/" "Documents/" "Tones/" ".rainbarf.conf" ".rainbarf.dat" ".Trash/" ".zsh-update" ".profile" ".vim.bk/" "Applications/" ".vimrc" "Movies/" "Voice Memos/" ".ssh/" ".rustup/" ".alacritty.yml.bk" "Automatically Add to iTunes.localized/" ".xvimrc" ".sh_history" "Termino/" "Binaries/" ".zcompdump-Vega-5.2.eduroam-prg-og-1-30-66.net.univ-paris-diderot.fr.2387" "Mobile Applications/" ".ropeproject/" "Notes/" "Public/" ".shell_prompt.sh" ".cups/" ".android/" ".cargo/" ".emacs.d/" "Podcasts/" "XML/" "Parallels/" ".zcompdump-Vega-5.2" ".oracle_jre_usage/" ".lesshst" ".matplotlib/" ".keybindings.sh" ".zcompdump-Vega-5.3" "Library/" ".ucon64/" "Desktop/" ".p2/" ".zsh_history" ".rnd" ".iTunes Preferences.plist" ".saves/" ".zprofile" ".atom/" "Roms/" "Source/" "Workspace/" ".neocomplcache/" ".multirust/" "Pictures/" "Projects/" ".local/" ".plotly/" ".tmux-powerlinerc" ".swp" ".zshrc" ".vnc/" ".bashrc" ".subversion/" ".tooling/" ".wget-hsts" ".varalias.sh" ".tmux.conf" ".gnupg/" "Eclipse/" ".DS_Store" ".viminfo.bk" ".vim/" "Temp/" ".wine/" ".epsxe/" "Developer/" ".zprofile.pysave" ".kodi/" ".java/" "Settings/" "Music/" ".triforce.conf" ".config/" ".eclipse/" ".Rhistory" ".bash_sessions_disable" "../" "./")
+
+ ("/Users/Hermes/Desktop/PROJECT/" (22868 9850 0 0) "WordEmbedding.java" "Spearman.java" "SemanticLexicon.java" "Retrofitting.java" "README.txt" "Rapport.pdf" "Perceptron.java" "javadoc/" "Evaluation.java" "DataLoader.java" "commons-math3-3.6.1.jar" "../" "./")
+
+ ("/Users/Hermes/Desktop/" (22870 16315 0 0) "stickyfunc-enhance.el.html" "Sémantique Computationnelle/" "PROJECT/" "Photos Lara/" "Phonologie/" "Nouvelles Théories Syntaxiques/" "Apprentissage Automatique/" "Analyse Prosodique/" "Algorithmique/" ".ropeproject/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Projects/WordEmbedding-Retrofitting/src/" (22853 36839 0 0) "WordDistance.java" "WordDistance.class" "WordDistance$1.class" "wolf-1.0b4.xml" "SAXParser.java" "SaxParsefFile.java" "Retrofitting.java" "../" "./")
+
+ ("/Users/Hermes/Projects/WordEmbedding-Retrofitting/" (22863 54839 0 0) "WordEmbedding-Retrofitting/" "vectors/" "src/" "setup.sh" "resources/" "README.md" "old-retrofitting/" "mvn_project_setup.sh" "evaluation/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Projects/" (22863 54839 0 0) "WordEmbedding-Retrofitting/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/.emacs.d/" (22870 16859 0 0) "themes/" "smex-items" "sessions/" "saves/" "init.el" "init-tty.el" "ido.last" "eshell/" "elpa/" "elisp/" "config/" "auto-save-list/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/.emacs.d/config/" (22870 16859 0 0) "tabbar.el" "style.el" "settings.el" "sessions.el" "packages.el" "modeline.el" "loader.el" "keybindings.el" "header.el" "functions.el" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/TD2/" (22701 52155 0 0) "small.train.examples" "small.test.examples" "reuters.train.examples" "reuters.test.examples" "medium.train.examples" "medium.test.examples" "M1_AA_TD_perceptron.pdf" "classdoc_perceptron_canevas.py" "classdoc_perceptron.py" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/TD1/" (22693 30460 0 0) "small.train.examples" "small.test.examples" "medium.train.examples" "medium.test.examples" "martinez.py" "M1_AA_TD_knn.pdf" "julia.py" "compute_tfidf.py" "classdoc_knn_tfidf.py" "classdoc_knn_complet.py" "classdoc_knn_canevas.py" ".ropeproject/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/" (22702 5863 0 0) "Sémantique Computationnelle/" "Phonologie/" "Phonétique/" "Langages Formelles/" "Approches Probabilistes pour le TAL/" "Apprentissage Automatique/" "Analyse Prosodique/" ".old/" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/Linguistique Informatique/Apprentissage Automatique/" (22684 34631 0 0) "TD2/" "TD1/" ".DS_Store" "../" "./")
+
+ ("/bin/" (22682 53380 0 0) "zsh" "wait4path" "unlink" "test" "tcsh" "sync" "stty" "sleep" "sh" "rmdir" "rm" "pwd" "ps" "pax" "mv" "mkdir" "ls" "ln" "link" "launchctl" "ksh" "kill" "hostname" "expr" "ed" "echo" "domainname" "df" "dd" "date" "csh" "cp" "chmod" "cat" "bash" "[" "../" "./")
+
+ ("/Applications/" (22700 6816 0 0) "Xcode.app/" "WhatsApp.app/" "VLC.app/" "Vellum.app/" "Übersicht.app/" "Utilities/" "Tunnelblick.app/" "Transmission.app/" "TorBrowser.app/" "Time Machine.app/" "The Unarchiver.app/" "TextEdit.app/" "TermHere.app/" "System Preferences.app/" "Stickies.app/" "Steam.app/" "Slack.app/" "Siri.app/" "Sigil.app/" "share/" "Safari.app/" "Reminders.app/" "QuickTime Player.app/" "Preview.app/" "Praat.app/" "PopcornTime.app/" "Photos.app/" "Photo Booth.app/" "Parallels Desktop.app/" "Pages.app/" "OpenEmu.app/" "Numbers.app/" "Notes.app/" "Neovim.app/" "Mission Control.app/" "Minecraft.app/" "Messages.app/" "Maps.app/" "Mail.app/" "MacVim.app/" "Mactracker.app/" "LINE.app/" "Launchpad.app/" "Keynote.app/" "Karabiner-EventViewer.app/" "Karabiner-Elements.app/" "iTunes.app/" "iTerm.app/" "Image Capture.app/" "iBooks.app/" "iBooks Author.app/" "Hideman VPN.app/" "HandBrake.app/" "Google Chrome.app/" "GeoGebra Math Apps.app/" "FontForge.app/" "Font Book.app/" "Firefox.app/" "FaceTime.app/" "Emacs.app/" "DVD Player.app/" "Dolphin.app/" "Discord.app/" "Dictionary.app/" "Dashboard.app/" "Contacts.app/" "Chess.app/" "calibre.app/" "Calendar.app/" "Calculator.app/" "bin/" "Automator.app/" "Audacity/" "Apptivate.app/" "AppCleaner.app/" "App Store.app/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/" (22516 51851 0 0) "Shared/" "Hermes/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/Cursus/" (22692 31638 0 0) "Natural Language Processing/" "Linguistique Informatique/" "Informatique/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/com~apple~CloudDocs/" (22626 59332 0 0) "Source/" "Images/" "Game Library/" "Files/" "Documents/" "Desktop/" "Cursus/" "Console Gaming/" "Books/" ".Trash/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Library/Mobile Documents/" (22667 1436 0 0) "ZXVGWN293L~com~slotgalaxy/" "Y7P46DNU78~com~2kgames~xcom/" "XXKJ396S2Y~com~autodesk~SketchBookPro/" "XHGLX5AE6Q~com~nimblebit~pockettrains/" "XHGLX5AE6Q~com~eeenmachine~pocketplanes/" "WZ62FEL3UG~com~mobilitygames~frozen/" "WZ62FEL3UG~com~disney~maleficent/" "WQFVNBNA97~com~FireproofStudios~TheRoom2/" "VJXTL73S8G~com~algoriddim~djay-ios/" "VFBSD3EVJ3~com~nbcuni~nbc~portal/" "VDZ8PCF9YD~com~halfbrick~jetpack/" "VDZ8PCF9YD~com~Halfbrick~Fruit/" "UENX6FS2UR~com~limbic~ac130/" "TSTV75T6Q5~com~ea~fifa13~bv/" "SXHX3674N7~com~reference~dictionary~dictionary/" "SCR5F2GB2S~com~trueaxis~skate/" "RZKWAK3484~com~popcap~ios~PvZ2/" "PT2F6DEV7F~uk~co~rodeogames~warhammerquest/" "PA8Y9ER352~com~dripgrind~mindly/" "P97H7FTHWN~com~realmacsoftware~clear/" "M3PVTTTZWA~it~doveconviene~DoveConviene/" "L967N79SM4~com~whitakr~Pivvot/" "JFJ4SDLLV4~com~mediocre~sprinkle/" "J73TJQ2H74~com~cateater~funapps~stopmotion/" "iCloud~waterminder/" "iCloud~QW9YDLAY9G~com~hotels~HotelsNearMe/" "iCloud~org~videolan~vlc-ios/" "iCloud~net~doo~scanbot/" "iCloud~kunabi~Blek/" "iCloud~co~curator~curator/" "iCloud~com~viator/" "iCloud~com~uriage~atopedia/" "iCloud~com~triadastudio~Shadowmatic/" "iCloud~com~tinyspeck~chatlyio/" "iCloud~com~revblaze~Code-Master/" "iCloud~com~reddit~alienblue/" "iCloud~com~readdle~Scanner~PDF/" "iCloud~com~pixite~pigment/" "iCloud~com~parallels~access/" "iCloud~com~odobo~play/" "iCloud~com~my~mail/" "iCloud~com~microsoft~skydrive/" "iCloud~com~microsoft~onenote/" "iCloud~com~microsoft~Office~Word/" "iCloud~com~linecorp~line/" "iCloud~com~ipopgame~izipfree/" "iCloud~com~imangi~templerun2/" "iCloud~com~google~container/" "iCloud~com~golfnow~teetimes/" "iCloud~com~getsetgames~scfree/" "iCloud~com~getdropbox~Dropbox/" "iCloud~com~dayoneapp~dayone-client-only/" "iCloud~com~dayoneapp~dayone/" "iCloud~com~aws~weatherbug~pro/" "iCloud~com~apple~ncplugin~weather/" "iCloud~com~apple~mobilesafari/" "iCloud~com~apple~messages~icloudsharing/" "iCloud~com~apple~itunesu/" "iCloud~com~apple~iBooks~iTunesU/" "iCloud~com~apple~iBooks/" "iCloud~ca~ianpage~Mactracker/" "HDE72H7JV2~com~fiftythree~paper/" "H3SY9HMA2Z~com~wayudaorerk~mangastormall/" "F6266T9T75~com~apple~iMovie/" "F3LWYJ7GM7~com~apple~musicmemos~ideas/" "F3LWYJ7GM7~com~apple~mobilegarageband/" "F3LWYJ7GM7~com~apple~garageband10/" "EXH3AZXVKG~com~rockstargames~gta3vc/" "EA8HQ5TBDY~com~atypicalgames~sgsr/" "DA33APV56V~com~aetn~lifetime~ios~watch/" "DA33APV56V~com~aetn~history~ios~watch/" "CRL6QA57MK~com~PeejStudio~HolyBible/" "com~apple~TextInput/" "com~apple~TextEdit/" "com~apple~system~spotlight/" "com~apple~shoebox/" "com~apple~ScriptEditor2/" "com~apple~QuickTimePlayerX/" "com~apple~Preview/" "com~apple~Pages/" "com~apple~Numbers/" "com~apple~Notes/" "com~apple~mobilemail/" "com~apple~mail/" "com~apple~Keynote/" "com~apple~CloudDocs/" "com~apple~Automator/" "C7HPP7U8L7~com~taptaptap~CameraPlus/" "BVL688YC98~com~namconetworks~birdzap/" "AVMHR99TJ4~com~designplusd~remember/" "AP637KM5A4~UBI~088~WW/" "AP637KM5A4~iCloud~com~ubisoft~adventure~valiant-hearts/" "AP637KM5A4~com~uaf~valiant/" "96RLY8D2JE~com~505games~gemsofwar/" "8XJ6WJ8Z84~com~chairentertainment~IB2/" "884G3699EN~com~smashatom~BornRich/" "8744AVB4AD~com~glu~stardomkim/" "7TY2SGRF49~com~ea~fifa14~inc/" "6AAXQQJPX5~com~designshed~alienblue/" "5ZG37AUMGQ~com~waterfall~eidetic/" "5U8NS4GX82~com~dayoneapp~dayone/" "5TZQ3ATX88~com~geekbeach~dunerider/" "5NK3BM678S~net~odasoft~xtremeslots/" "57T9237FN3~net~whatsapp~WhatsApp/" "57A5PY72HT~de~gameduell~belote/" "4Y88GT38KY~com~viz~stickydot/" "4Y88GT38KY~com~viz~ipad-manga/" "4UBYM7B699~com~rayark~pluto/" "4R6749AYRE~com~pixelmatorteam~pixelmator/" "4H8VTS9D6W~jp~co~capcom~gyakusai5en/" "472BVJK4N2~com~avidionmedia~iGunHD/" "45368985S2~com~Camouflaj~Republique/" "3YEUPUD4EX~com~fusepowered~jaws2/" "3LUJ35F468~com~africasunrise~skinseedforminecraftfree/" "3L68KQB4HG~com~readdle~Scanner/" "3L68KQB4HG~com~readdle~PDFExpertIPad/" "3L68KQB4HG~com~readdle~CommonDocuments/" "3F6W968EF7~com~abvio~Cyclemeter/" "3DCX9AP874~com~supersolid~adventuretown/" "356QY8883U~com~melodis~soundhound~free/" "27N4MQEA55~pro~writer/" "26NR694A3R~com~crossforward~audiobooks/" "243LU875E5~com~apple~movietrailers/" "2287T87YW3~com~sis~si~mymeasurespro/" ".DS_Store" "../" "./")
+
+ ("/Users/Hermes/Library/" (22582 59200 0 0) "WebKit/" "Voices/" "SyncedPreferences/" "Suggestions/" "Spelling/" "Sounds/" "sisinfo.plist" "Sharing/" "Services/" "ScriptingAdditions/" "Screen Savers/" "Saved Application State/" "Safari/" "PubSub/" "Printers/" "Preferences/" "PreferencePanes/" "Personas/" "Passes/" "Parallels/" "openvpn/" "MobileDevice/" "Mobile Documents/" "Metadata/" "Messages/" "Maps/" "Mail/" "Logs/" "LaunchAgents/" "LanguageModeling/" "Keychains/" "KeyboardServices/" "Keyboard Layouts/" "Keyboard/" "KeyBindings/" "iTunes/" "Internet Plug-Ins/" "Input Methods/" "iMovie/" "IdentityServices/" "Group Containers/" "Google/" "GameKit/" "Fonts/" "FontCollections/" "Favorites/" "Dictionaries/" "Developer/" "CoreFollowUp/" "CoreData/" "Cookies/" "Containers/" "Compositions/" "com.apple.nsurlsessiond/" "Colors/" "ColorPickers/" "CallServices/" "Calendars/" "Caches/" "Autosave Information/" "Audio/" "Assistants/" "Assistant/" "Application Support/" "Application Scripts/" "Accounts/" ".localized" ".DS_Store" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
