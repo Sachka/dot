@@ -1,0 +1,21 @@
+OS=`uname`
+if [[ $OS == 'Darwin' ]]; then
+# macOS variables #
+    clouddocs=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs
+    cursus=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Cursus
+    ibooks=$HOME/Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/Books
+    export PATH="/Users/Hermes/Library/Python/3.6/bin:$PATH"
+elif [[ $OS == 'Linux' ]]; then
+    export LC_TYPE="en_US.UTF-8"
+    export LC_ALL="en_US.UTF-8"
+fi
+PATH="$HOME/Binaries:$PATH"
+# Unix variables #
+docs=$HOME/Documents
+src=$HOME/Source
+bin=$HOME/Binaries
+dev=$HOME/Developer
+proj=$HOME/Projects
+eml=hermesm@gmail.com
+Manatee=88.187.37.224
+atomserver=52698:localhost:52698

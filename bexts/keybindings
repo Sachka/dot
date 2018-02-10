@@ -1,0 +1,20 @@
+# Terminal macOS keybindings
+# Resume allows to return to a backgroud process with ^Z
+function resume {
+  fg
+  zle push-input
+  BUFFER=""
+  zle accept-line
+}
+SHLL=`ps -p "$$" | grep sh`
+
+
+### BASH OR SH KEYBINDINGS ###
+if [[ $SHLL =~ 'bash' ]] || [[ $SHLL =~ ' sh' ]]; then
+    stty susp undef
+    bind '"\C-z":"fg\015"';
+### ZSH KEYBINDINGS ###
+elif [[ $SHLL =~ 'zsh' ]]; then
+    zle -N resume;
+    bindkey "^Z" resume;
+fi

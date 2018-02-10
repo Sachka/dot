@@ -1,0 +1,157 @@
+SHLL=`ps -p "$$" | grep sh`
+OS=`uname`
+# macOS #
+###############################################################################
+if [[ $OS == 'Darwin' ]]; then
+# Aliases #
+    alias ls='ls -lhG'
+    alias ll='ls -lhaG | less -R'
+    alias dir='ls -lhG'
+    #alias textedit='open -a TextEdit'
+    alias zoomin='$DOT/extra/terminal/zoom_in'
+    alias zoomout='$DOT/extra/terminal/zoom_out'
+# Functions #
+    # Terminal theme settings #
+    vampire() {
+        $DOT/extra/terminal/set_dracula;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/dracula.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    sun() {
+        $DOT/extra/terminal/set_solarized_light;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/solarized_light.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    moon() {
+        $DOT/extra/terminal/set_solarized_dark;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/solarized_dark.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    material() {
+        $DOT/extra/terminal/set_papercolor_dark;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/papercolor_dark.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    colorless() {
+        #$DOT/extra/terminal/set_colorless;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/colorless.sh $HOME/.prompt;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    Siri() { say -v Samantha "$@"; }
+    siri() { say -v Samantha "$@"; }
+    samantha() { say -v Samantha "$@"; }
+    reinstall () { sudo chmod +x "$@" && cp "$@" $HOME/Binaries; }
+    unmount () { diskutil unmount "$@"; }
+    hiddenswitch() { defaults write com.apple.finder AppleShowAllFiles "$1"; afplay $HOME/Settings/Secret/LA_Secret1.wav; killall Finder; }
+    textEdit() { open -e "$@"; }
+
+    cs() {
+        cd $1 && ls -lhG;
+    }
+fi
+
+# Linux #
+###############################################################################
+if [[ $OS == 'Linux' ]]; then
+# Aliases and functions #
+    alias ls='ls -lh --color=auto'
+    alias ll='ls -lha --color=auto | less'
+    alias dir='ls -lh --color=auto'
+    unmount () { umount /media/$USER/"$@"; }
+    sun() {
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
+        yes | cp -rf $DOT/extra/prompt/solarized_light.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/lightscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    moon() {
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
+        yes | cp -rf $DOT/extra/prompt/solarized_dark.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/darkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    vampire() {
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
+        yes | cp -rf $DOT/extra/prompt/dracula.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/draculascheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    material() {
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/papercolor_dark.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/paperdarkscheme.vim $HOME/.vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+    colorless() {
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/colorless.sh $HOME/.prompt;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/.zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    }
+fi
+
+# Unix #
+###############################################################################
+goback() {
+    history | grep $1;
+}
+
+alias defjava8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`"
+alias defjava9="export JAVA_HOME=`/usr/libexec/java_home -v 9`"
+alias rezsh="source $HOME/.zshrc"
+alias rebash="source $HOME/.bashrc"
+alias retmux="tmux source-file $HOME/.tmux.conf"
+alias download="youtube-dl"
+alias py=python
+alias py3=python3
+alias vi="vi -u NONE"
+alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'

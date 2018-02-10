@@ -1,0 +1,18 @@
+## HERE EXPORT
+if [ -d "$HOME/.config/dot" ]; then
+  export DOT="$HOME/.config/dot"
+elif [ -d "$HOME/Dotfiles" ]; then
+  export DOT="$HOME/Dotfiles"
+else
+  echo "Unable to find dotfiles, exiting."
+  return
+fi
+export bin="$HOME/Binaries"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+PATH="/Users/Hermes/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/Hermes/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/Hermes/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/Hermes/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/Hermes/perl5"; export PERL_MM_OPT;
+export PATH=$PATH:.
