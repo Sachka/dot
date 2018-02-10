@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Hermes/Projects/SparkUp/service-messages-ml/deep'
-let g:netrw_dirhist_2='/Users/Hermes/.config/dot'
-let g:netrw_dirhist_3='/Users/Hermes/.config/dot/bexts'
-let g:netrw_dirhist_4='/Users/Hermes/.config/dot/extra/secret'
-let g:netrw_dirhist_5='/Users/Hermes/.config/dot/extra/terminal/AutoZoomIn.app'
-let g:netrw_dirhist_6='/Users/Hermes/.config/dot/extra/terminal/AutoZoomIn.app/Contents'
-let g:netrw_dirhist_7='/Users/Hermes/.config/dot/extra/terminal/AutoZoomIn.app/Contents/MacOS'
-let g:netrw_dirhist_8='/Users/Hermes/.config/dot/bexts'
-let g:netrw_dirhist_9='/Users/Hermes/.config/dot'
+let g:netrw_dirhist_cnt =0

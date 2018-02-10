@@ -12,3 +12,5 @@ tmux/plugins
 vim/plugins
 vim/plugged
 vim/.netrwhist
+
+*.swp
