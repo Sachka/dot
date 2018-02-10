@@ -5,3 +5,9 @@
 emacs.d/elpa/
 emacs.d/melpa/
 
+# tmux
+tmux/plugins
+
+# vim
+vim/plugins
+vim/plugged
