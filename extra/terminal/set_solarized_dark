@@ -1,0 +1,7 @@
+#!/usr/bin/env osascript
+on run 
+  tell application "Terminal"
+    set default settings to settings set "Solarized Dark"
+    set current settings of tabs of windows to settings set "Solarized Dark"
+  end tell
+end run

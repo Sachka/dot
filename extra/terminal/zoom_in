@@ -1,0 +1,7 @@
+#!/usr/bin/env osascript
+on run
+  tell application "Terminal"
+    set the font size of current settings of tabs of windows to "15"
+    set the font size of default settings to "15"
+  end tell
+end run
