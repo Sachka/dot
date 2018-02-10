@@ -27,6 +27,6 @@ while true; do
     * ) echo "Please answer yes or no.";;
   esac
 done
-cp ~/.config/dot/extra/papercolor_dark.sh ~/.prompt
+cp ~/.config/dot/extra/prompt/papercolor_dark.sh ~/.prompt
 
 echo "End of script."
