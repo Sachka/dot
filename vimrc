@@ -8,33 +8,22 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-                               " NEOVIM SETUP "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has('nvim')
-     " foo bar
-     "
-endif
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
 "------------------------------------------------------------------------------"
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  let g:deoplete#enable_at_startup = 1
+endif
 " ctrlp
-Plug '/kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " surround
 Plug 'tpope/vim-surround'
-" The-NERD-Tree
-"Plug 'The-NERD-Tree' GETS BROKEN WITH SESSION MANAGEMENT
 " The-NERD-Commenter
 Plug 'scrooloose/nerdcommenter'
-" Syntastic THIS IS SYNCHRONOUS, DEPRECATED
-"Plug 'Syntastic'
-" deoplete
-Plug 'Shougo/deoplete.nvim'
 " Evanesco (Automatically clears search highlight)
 Plug 'pgdouyon/vim-evanesco'
 " Better Whitespace
 Plug 'ntpeters/vim-better-whitespace'
-" taboo
-"Plug 'gcmt/taboo.vim'
 " vim-multiple-cursors
 Plug 'https://github.com/terryma/vim-multiple-cursors.git'
 " vim-airline
@@ -48,7 +37,7 @@ Plug 'edkolev/promptline.vim'
 " repeat.vim
 Plug 'tpope/vim-repeat'
 " vim image
-"Plug 'ashisha/image.vim'
+Plug 'ashisha/image.vim'
 " Swift syntax
 Plug 'https://github.com/keith/swift.vim.git'
 " Dracula Theme
@@ -59,24 +48,21 @@ Plug 'https://github.com/tpope/vim-obsession.git'
 Plug 'https://github.com/tpope/vim-eunuch.git'
 "Vinegar
 Plug 'https://github.com/tpope/vim-vinegar.git'
-" Autopep8
-Plug 'minamorl/autopep8.vim'
-" vim-hug-neovim-rpc
-Plug 'roxma/vim-hug-neovim-rpc'
+"Fugitive
+Plug 'https://github.com/tpope/vim-fugitive.git'
 " NeoSolarized
 Plug 'iCyMind/NeoSolarized'
 " All Plugins must be added before the following line
-"
+" Jedi
+Plug 'davidhalter/jedi-vim'
 "
 "------------------------------------------------------------------------------"
 call plug#end()            " required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                             " personal settings "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" solarized current line number color
-hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#b58900
+" solarized current line number color in macvim
+"hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#b58900
 " encoding
 set encoding=utf8
 " show statusline
@@ -143,92 +129,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-                                 " mappings "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" multiple cursor vscode
-"map <D-d> <C-n> Does not really work
-" cool yanking
-map Y "+y
-" spelling toggle
-map <C-c>s :setlocal spell!<cr>
-" source loading
-nmap <C-c><C-r> :source ~/.vimrc <BAR> :nohl <BAR> AirlineRefresh <CR>
-" set transparent mode and background
-nmap <C-c>1 :color solarized <BAR> AirlineTheme solarized <BAR> set background=light <CR>
-nmap <C-c>2 :color solarized <BAR> AirlineTheme solarized <BAR> set background=dark <BAR> hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#839496<CR>
-nmap <C-c>3 :color dracula <BAR> AirlineTheme dracula <CR>
-" reload file
-nmap <C-c><C-u> :edit<BAR> :AirlineRefresh<CR>
-" previous buffer
-nmap gB :bp<CR>
-nmap <D-p> :bp<CR>
-nmap π :bp<CR>
-" next buffer
-nmap gw <C-w>w<cr>
-nmap gb :bn<CR>
-nmap <D-n> :bn<CR>
-nmap ˜ :bn<CR>
-" close buffer
-nmap <D-w> :bd<CR>
-" powersaves
-noremap <leader># :w !sudo tee % > /dev/null
-" no hightlight
-nnoremap <C-l> :nohl<CR>
-" faster access to :
-nnoremap ; :
-" tmux compatibility
-nnoremap <C-b> <C-a>
-" take a theme screenshot
-nmap <leader>P :PromptlineSnapshot! ~/.shell_prompt.sh airline <CR>
-" save the game
-nmap<D-s> :w <CR>
-" save the session
-nmap<D-S> :mksession! ~/.vim/sessions/
-" go home
-nmap <silent> <D-h> :execute 'silent !open .' <CR>
-" open Terminal
-nmap <silent> <D-r> :execute 'silent !open /Applications/Utilities/Terminal.app' <CR>
-" movement between lines
-"nmap <leader>% :map j gj | :map k gk<CR>
-" Autopep8 map
-autocmd FileType python nnoremap <buffer> <silent> <leader>f :call autopep8#clean()<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-                            " session management "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set ssop-=options    " do not store global and local values in a session
-set ssop-=folds      " do not store folds
-set ssop-=helps      " do not store help messages
-nmap <silent> <D-)> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/n0<CR>
-nmap <silent> <D-0> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s0<CR>
-nmap <silent> <D-!> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s1<CR>
-nmap <silent> <D-@> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s2<CR>
-nmap <silent> <D-#> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s3<CR>
-nmap <silent> <D-$> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s4<CR>
-nmap <silent> <D-%> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s5<CR>
-nmap <silent> <D-^> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s6<CR>
-nmap <silent> <D-&> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s7<CR>
-nmap <silent> <D-*> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s8<CR>
-nmap <silent> <D-(> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s9<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-                    " emacs keybindings for insert mode "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap ƒ <ESC>ea
-inoremap ∫ <ESC>ba
-inoremap <C-P> <Up>
-inoremap <C-N> <Down>
-inoremap <C-a> <Home>
-inoremap <C-b> <Left>
-inoremap <C-e> <End>
-inoremap <C-f> <Right>
-inoremap <C-k> <Esc>lDa
-inoremap <C-u> <Esc>d0xi
-inoremap <C-y> <Esc>Pa
-inoremap <C-X><C-S> <Esc>:w<CR>a
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                             " vim-airline settings "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if !exists('g:airline_symbols')
@@ -270,12 +170,14 @@ let g:airline#extensions#tabline#buffer_nr_format = '%s: '
 "let g:airline#extensions#tabline#close_symbol = 'X'
 let g:airline#extensions#tabline#show_close_button = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:deoplete#enable_at_startup = 1
+let g:ctrlp_map = '<C-p>'
+let g:ctrlp_cmd = 'CtrlP'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                                 " continue? "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source ~/.vim/settings/colorscheme.vim
 source ~/.vim/settings/compilation.vim
+source ~/.vim/settings/mappings.vim
 hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#839496
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -283,4 +185,3 @@ hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#839496
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " don't display current mode (requires last priority)
 set noshowmode
-" end of script?

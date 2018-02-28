@@ -9,7 +9,8 @@ else
 fi
 export bin="$HOME/Binaries"
 if [ -x "$(command -v java)" ]; then
-  #export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+    return
+  #export JAVA_HOME='/usr/libexec/java_home -v 1.8'
 fi
 
 PATH="/Users/Hermes/perl5/bin${PATH:+:${PATH}}"; export PATH;

@@ -1,5 +1,5 @@
 #!/usr/bin/env osascript
-on run 
+on run
   tell application "Terminal"
     set default settings to settings set "Dracula"
     set current settings of tabs of windows to settings set "Dracula"

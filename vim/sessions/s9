@@ -3,18 +3,58 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/Projects/SparkUp/service-messages-ml
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +14 tagger.py
+badd +33 model.py
+badd +130 mmining/mtokenizer.py
+badd +47 mfetch.py
+badd +47 data.py
+badd +2 firstnames.json
+badd +26 mmining/resources/cleaning_rules/email.json
+badd +32 mmining/mcleaner.py
+badd +11 playground.py
+badd +2 ~/Projects/SparkUp/basic-lib/cleaner.py
+badd +23 mmining/moracle.py
 argglobal
 silent! argdel *
+edit tagger.py
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 117 + 119) / 239)
+exe 'vert 2resize ' . ((&columns * 121 + 119) / 239)
 argglobal
-enew
+let s:l = 7 - ((6 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+7
+normal! 0
+lcd ~/Projects/SparkUp/service-messages-ml
+wincmd w
+argglobal
+if bufexists('~/Projects/SparkUp/service-messages-ml/playground.py') | buffer ~/Projects/SparkUp/service-messages-ml/playground.py | else | edit ~/Projects/SparkUp/service-messages-ml/playground.py | endif
+let s:l = 1 - ((0 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 015|
+lcd ~/Projects/SparkUp/service-messages-ml
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 117 + 119) / 239)
+exe 'vert 2resize ' . ((&columns * 121 + 119) / 239)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

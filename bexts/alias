@@ -1,5 +1,22 @@
 SHLL=`ps -p "$$" | grep sh`
 OS=`uname`
+
+# Functions #
+change_theme() {
+    if [ -f "$DOT/extra/terminal/set_$1" ]; then
+        $DOT/extra/terminal/set_$1;
+        yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_prompt.sh;
+        yes | cp -rf $DOT/extra/prompt/$1.sh $HOME/.prompt;
+        yes | cp -rf $DOT/vim/colorscheme/$1scheme.vim $DOT/vim/settings/colorscheme.vim;
+        if [[ $SHLL =~ 'zsh' ]]; then
+            source $HOME/ .zshrc;
+        elif [[ $SHLL =~ 'bash' ]]; then
+            source $HOME/.bashrc;
+        fi
+    else
+        echo "Error: '$1' is not a recognized theme";
+    fi
+}
 # macOS #
 ###############################################################################
 if [[ $OS == 'Darwin' ]]; then

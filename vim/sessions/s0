@@ -3,26 +3,27 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/.vim
+cd ~/.config/dot
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ../.vimrc
-badd +1 ../.gvimrc
-badd +2 settings/colorscheme.vim
-badd +0 settings/compilation.vim
+badd +1 vimrc
+badd +1 nvim/init.vim
+badd +1 gvimrc
+badd +1 vim/settings/colorscheme.vim
+badd +1 vim/settings/compilation.vim
+badd +1 vim/settings/mappings.vim
 argglobal
 silent! argdel *
-argadd ../.vimrc
-edit settings/compilation.vim
+edit vimrc
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
 wincmd t
-set winheight=1 winwidth=1
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
-let s:l = 1 - ((0 * winheight(0) + 31) / 63)
+let s:l = 1 - ((0 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -33,7 +34,8 @@ if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToO
+set winheight=1 winwidth=20 shortmess=aoO
+set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)

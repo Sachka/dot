@@ -173,7 +173,7 @@ __get_condition_symbol() {
 			fi
 			;;
 		*)
-			echo "?"
+			echo "☼"
 			;;
 	esac
 }
