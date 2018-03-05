@@ -52,9 +52,16 @@ Plug 'https://github.com/tpope/vim-vinegar.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 " NeoSolarized
 Plug 'iCyMind/NeoSolarized'
+
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
+Plug 'w0rp/ale'
+
+Plug 'airblade/vim-gitgutter'
+
 " All Plugins must be added before the following line
-" Jedi
-Plug 'davidhalter/jedi-vim'
 "
 "------------------------------------------------------------------------------"
 call plug#end()            " required
@@ -169,9 +176,33 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s: '
 "let g:airline#extensions#tabline#close_symbol = 'X'
 let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#ale#enabled = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:deoplete#enable_at_startup = 1
+let g:ale_completion_enabled = 1
+let b:ale_linters = ['flake8']
+let b:ale_fixers = ['autopep8']
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+"let g:ale_sign_error = '•'
+"let g:ale_sign_warning = '•'
+"let g:ale_sign_error = '•'
+"let g:ale_sign_warning = '!'
+"let g:ale_sign_error = "◉"
+"let g:ale_sign_warning = "◉"
+"highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#dc322f guibg=#586e75
+"highlight ALEWarningSign ctermfg=1 ctermbg=15 guifg=#b58900 guibg=#586e75
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:gitgutter_signs = 0
+let g:gitgutter_override_sign_column_highlight = 0
+set signcolumn=yes
+
+"let g:ale_lint_on_text_changed = 'always'
+"let g:ale_lint_delay = 10
+"let g:ale_lint_on_text_changed = 'never'
+"let g:ale_lint_on_enter = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                                 " continue? "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -179,6 +210,7 @@ source ~/.vim/settings/colorscheme.vim
 source ~/.vim/settings/compilation.vim
 source ~/.vim/settings/mappings.vim
 hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#839496
+hi SignColumn guibg=#002b36
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                              " last priority line
