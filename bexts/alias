@@ -27,6 +27,7 @@ if [[ $OS == 'Darwin' ]]; then
     #alias textedit='open -a TextEdit'
     alias zoomin='$DOT/extra/terminal/zoom_in'
     alias zoomout='$DOT/extra/terminal/zoom_out'
+    alias vim='mvim -v'
 # Functions #
     # Terminal theme settings #
     vampire() {
