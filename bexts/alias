@@ -27,7 +27,9 @@ if [[ $OS == 'Darwin' ]]; then
     #alias textedit='open -a TextEdit'
     alias zoomin='$DOT/extra/terminal/zoom_in'
     alias zoomout='$DOT/extra/terminal/zoom_out'
-    alias vim='mvim -v'
+    alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g --remote-silent'
+    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -v'
+    alias vi="/Applications/MacVim.app/Contents/MacOS/Vim -v -u NONE"
 # Functions #
     # Terminal theme settings #
     vampire() {
@@ -104,6 +106,7 @@ if [[ $OS == 'Linux' ]]; then
     alias ls='ls -lh --color=auto'
     alias ll='ls -lha --color=auto | less'
     alias dir='ls -lh --color=auto'
+    alias vi="vi -u NONE"
     unmount () { umount /media/$USER/"$@"; }
     sun() {
         yes | cp -rf $HOME/.prompt $DOT/extra/prompt/last_settings.sh;
@@ -167,9 +170,6 @@ goback() {
 alias rezsh="source $HOME/.zshrc"
 alias rebash="source $HOME/.bashrc"
 alias retmux="tmux source-file $HOME/.tmux.conf"
-alias download="youtube-dl"
+alias getvid="youtube-dl"
 alias py=python
 alias py3=python3
-alias vi="vi -u NONE"
-alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
-alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
