@@ -33,6 +33,7 @@ else
     export ZSH=$HOME/.oh-my-zsh
     plugins=(git)
 fi
+export TERM=xterm-256color
 
 ### .zshrc ###
 # If you come from bash you might have to change your $PATH.
@@ -135,8 +136,10 @@ else
   return
 fi
 
-# Sourcing dot files
+# Sourcing bash extension files
 for DOTFILE in $DOT/bexts/*; do
-  [ -f "$DOTFILE" ] && . "$DOTFILE"
+  [ -f $DOTFILE ] && source $DOTFILE
 done
 unset DOTFILE
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
