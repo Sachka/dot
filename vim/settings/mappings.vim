@@ -2,58 +2,43 @@
                                  " mappings "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
-" cool yanking
+noremap <leader># :w !sudo tee % > /dev/null " #POWERSAVE
 map Y "+y
-" spelling toggle
-map <C-c>s :setlocal spell!<cr>
-" source loading
-nmap <C-c><C-r> :echo "RELOADING..." <BAR> source ~/.vimrc <BAR> :nohl <BAR> AirlineRefresh <CR>
-" set transparent mode and background
-nmap <C-c>1 :color solarized <BAR> AirlineTheme solarized <BAR> set background=light <CR>
-nmap <C-c>2 :color solarized <BAR> AirlineTheme solarized <BAR> set background=dark <BAR> hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=#839496<CR>
-nmap <C-c>3 :color dracula <BAR> AirlineTheme dracula <CR>
-" reload file
-nmap <C-c><C-u> :edit<BAR> :AirlineRefresh<CR>
-" previous buffer
 nmap gB :bp<CR>
-nmap <D-p> :bp<CR>
-nmap π :bp<CR>
-" next buffer
-nmap gw <C-w>w<cr>
 nmap gb :bn<CR>
-nmap <D-n> :bn<CR>
-nmap ˜ :bn<CR>
-" close buffer
-nmap <D-w> :bd<CR>
-" powersaves
-noremap <leader># :w !sudo tee % > /dev/null
-" no hightlight
 nnoremap <C-l> :nohl<CR>
-" faster access to :
 nnoremap ; :
-" tmux compatibility
 nnoremap <C-b> <C-a>
-" take a theme screenshot
-nmap <leader>P :PromptlineSnapshot! ~/.shell_prompt.sh airline <CR>
-" save the game
-nmap<D-s> :w <CR>
-" save the session
-nmap<D-S> :mksession! ~/.vim/sessions/
-nmap<D-/> <leader>c<space>
-nmap<C-c><C-c> <leader>c<space>
-" go home
-nmap <silent> <D-h> :execute 'silent !open .' <CR>
-" open Terminal
-nmap <silent> <D-r> :execute 'silent !open /Applications/Utilities/Terminal.app' <CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                    " settings / customization mappings "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <D-p> :bp<CR>
+nmap <D-n> :bn<CR>
+nmap <D-w> :bd<CR>
+nmap <D-s> :w <CR>
+nmap <D-S> :mksession! ~/.vim/sessions/
+nmap <silent> <D-h> :execute 'silent !open .' <CR>
+nmap <silent> <D-r> :execute 'silent !open /Applications/Utilities/Terminal.app' <CR>
+nmap <C-c><C-r> :source ~/.vimrc <BAR> :nohl <BAR> AirlineRefresh <BAR> :echo "RELOADED" <CR>
+nmap <C-c><C-u> :edit<BAR> :AirlineRefresh<CR>
+nmap <C-c>s :setlocal spell!<cr>
+nmap <C-c>1 :color solarized <BAR> AirlineTheme solarized <BAR> set background=light <CR>
+nmap <C-c>2 :color solarized <BAR> AirlineTheme solarized <BAR> set background=dark <CR>
+nmap <C-c>3 :color dracula <BAR> AirlineTheme dracula <CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <C-x><C-w> :bd<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                                   " 3rd "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-m> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                             " session management "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
 set ssop-=helps      " do not store help messages
-nmap <silent> <D-)> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/n0<CR>
-nmap <silent> <D-0> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s0<CR>
+nmap <silent> <D-)> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s0<CR>
 nmap <silent> <D-!> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s1<CR>
 nmap <silent> <D-@> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s2<CR>
 nmap <silent> <D-#> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s3<CR>
@@ -64,6 +49,15 @@ nmap <silent> <D-&> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s
 nmap <silent> <D-*> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s8<CR>
 nmap <silent> <D-(> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/s9<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <D-1> <Plug>AirlineSelectTab1
+nmap <D-2> <Plug>AirlineSelectTab2
+nmap <D-3> <Plug>AirlineSelectTab3
+nmap <D-4> <Plug>AirlineSelectTab4
+nmap <D-5> <Plug>AirlineSelectTab5
+nmap <D-6> <Plug>AirlineSelectTab6
+nmap <D-7> <Plug>AirlineSelectTab7
+nmap <D-8> <Plug>AirlineSelectTab8
+nmap <D-9> <Plug>AirlineSelectTab9
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                     " emacs keybindings for insert mode "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

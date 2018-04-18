@@ -2,8 +2,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
-
-
 language en_US
 set timeoutlen=1000 ttimeoutlen=0
 set showcmd!
@@ -27,6 +25,8 @@ let g:terminal_color_12 = '#839496'
 let g:terminal_color_13 = '#6c6ec6'
 let g:terminal_color_14 = '#93a1a1'
 let g:terminal_color_15 = '#fdf6e3'
+
+set guifont='PragmataPro Awesome':h15
 
 if has("gui_vimr")
     nmap <silent> <D-)> :execute 'silent! %bwipeout!' <BAR> source ~/.vim/sessions/n0<CR>

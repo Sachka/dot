@@ -3,24 +3,39 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/Projects/Demo
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +1 model.py
+badd +63 preproc.py
+badd +26 demo2.py
+badd +7 demo3.py
+badd +1 ~/Projects/Demo
+badd +0 ~/Projects/Playground/keylisten.py
 argglobal
 silent! argdel *
+edit ~/Projects/Playground/keylisten.py
 set splitbelow splitright
+set nosplitbelow
+set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
-enew
+let s:l = 21 - ((0 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+21
+normal! 015|
+lcd ~/Projects/Demo
 tabnext 1
-if exists('s:wipebuf')
+if exists('s:wipebuf') && s:wipebuf != bufnr('%')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToO
+set winheight=1 winwidth=20 shortmess=aoO
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)

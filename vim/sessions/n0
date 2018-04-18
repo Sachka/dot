@@ -3,39 +3,51 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/.config/dot
+cd ~/.vim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 vimrc
-badd +1 nvim/init.vim
-badd +1 gvimrc
-badd +1 vim/settings/colorscheme.vim
-badd +1 vim/settings/compilation.vim
-badd +1 vim/settings/mappings.vim
+badd +1 ../.vimrc
+badd +1 ../.gvimrc
+badd +2 settings/colorscheme.vim
+badd +1 settings/compilation.vim
 argglobal
 silent! argdel *
-$argadd ~/Projects/SparkUp/service-messages-ml/data.py
-edit vimrc
+$argadd ../.vimrc
+edit settings/compilation.vim
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 127 + 127) / 255)
+exe 'vert 2resize ' . ((&columns * 127 + 127) / 255)
 argglobal
-let s:l = 1 - ((0 * winheight(0) + 21) / 42)
+let s:l = 81 - ((60 * winheight(0) + 31) / 63)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+81
+normal! 030|
+wincmd w
+argglobal
+enew
+file Python
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 127 + 127) / 255)
+exe 'vert 2resize ' . ((&columns * 127 + 127) / 255)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=aoO
+set winheight=1 winwidth=20 shortmess=filnxtToO
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)

@@ -1,5 +1,5 @@
 {
-  "title": "Emacs key bindings (rev 9)",
+  "title": "Emacs key bindings (rev 10)",
   "rules": [
     {
       "description": "Emacs key bindings [C-x key strokes] (rev 1)",
@@ -158,6 +158,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -173,7 +174,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -195,7 +198,7 @@
       ]
     },
     {
-      "description": "Emacs key bindings [control+keys] (rev 8)",
+      "description": "Emacs key bindings [control+keys] (rev 9)",
       "manipulators": [
         {
           "type": "basic",
@@ -226,6 +229,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -241,7 +245,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -289,6 +295,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -304,7 +311,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -352,6 +361,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -367,7 +377,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -492,6 +504,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -507,7 +520,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -556,6 +571,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -571,7 +587,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -620,6 +638,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -635,7 +654,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -684,6 +705,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -699,7 +721,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -747,6 +771,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -762,7 +787,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -840,6 +867,68 @@
               ]
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.eclipse\\.platform\\.ide$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.eclipse\\.platform\\.ide$"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -875,6 +964,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -890,7 +980,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -941,6 +1033,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -956,7 +1049,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -1007,6 +1102,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -1022,7 +1118,9 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",
@@ -1072,6 +1170,7 @@
                 "^org\\.pqrs\\.unknownapp.conkeror$",
                 "^com\\.microsoft\\.rdc$",
                 "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
                 "^com\\.microsoft\\.rdc\\.osx\\.beta$",
                 "^net\\.sf\\.cord$",
                 "^com\\.thinomenon\\.RemoteDesktopConnection$",
@@ -1087,7 +1186,155 @@
                 "^co\\.zeit\\.hyperterm$",
                 "^co\\.zeit\\.hyper$",
                 "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
                 "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$",
+                "^com\\.microsoft\\.VSCode$"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Bash style Emacs key bindings (rev 1)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$",
+                "^com\\.microsoft\\.VSCode$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "delete_or_backspace",
+              "repeat": false
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.macos$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^net\\.kovidgoyal\\.kitty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
                 "^com\\.vmware\\.fusion$",
                 "^com\\.vmware\\.horizon$",
                 "^com\\.vmware\\.view$",

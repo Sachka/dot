@@ -3,20 +3,40 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd /Volumes/Projects/service-messages-ml
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +1 campaign.py
+badd +23 playground.py
+badd +25 process_data.py
+badd +1 language_detection.py
+badd +1 fetch.py
+badd +21 train.py
+badd +27 m4_train.py
+badd +40 new_train.py
+badd +212 textmining/estimators.py
+badd +100 tag_extract.py
+badd +481 textmining/preprocessing.py
+badd +1 /Volumes/Projects/service-messages-ml
+badd +0 message_board.py
 argglobal
 silent! argdel *
+edit message_board.py
 set splitbelow splitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
-enew
+let s:l = 3 - ((2 * winheight(0) + 30) / 60)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+3
+normal! 0
+lcd /Volumes/Projects/service-messages-ml
 tabnext 1
-if exists('s:wipebuf')
+if exists('s:wipebuf') && s:wipebuf != bufnr('%')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf

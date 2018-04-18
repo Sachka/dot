@@ -3,47 +3,36 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/.vim
+cd ~/.config/dot/vim/settings
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ../.vimrc
-badd +1 ../.gvimrc
-badd +2 settings/colorscheme.vim
-badd +1 settings/compilation.vim
+badd +77 ~/.config/dot/vimrc
+badd +1 ~/.config/dot/nvim/init.vim
+badd +1 ~/.config/dot/gvimrc
+badd +1 colorscheme.vim
+badd +2 compilation.vim
+badd +56 mappings.vim
+badd +1 settings.vim
 argglobal
 silent! argdel *
-$argadd ../.vimrc
-edit settings/compilation.vim
+edit compilation.vim
 set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 127 + 127) / 255)
-exe 'vert 2resize ' . ((&columns * 127 + 127) / 255)
 argglobal
-let s:l = 81 - ((60 * winheight(0) + 31) / 63)
+let s:l = 54 - ((53 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-81
-normal! 030|
-wincmd w
-argglobal
-enew
-file Python
-wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 127 + 127) / 255)
-exe 'vert 2resize ' . ((&columns * 127 + 127) / 255)
+54
+normal! 025|
+lcd ~/.config/dot/vim/settings
 tabnext 1
-if exists('s:wipebuf')
+if exists('s:wipebuf') && s:wipebuf != bufnr('%')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf

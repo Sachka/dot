@@ -31,3 +31,4 @@ done
 cp ~/.config/dot/extra/prompt/papercolor_dark.sh ~/.prompt
 
 echo "End of script."
+#

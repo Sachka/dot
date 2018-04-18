@@ -8,49 +8,30 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +17 /Volumes/Projects/Playground/model.py
-badd +14 textmining/hyperoptimizers.py
-badd +1 process_data.py
-badd +208 textmining/processing.py
-badd +77 textmining/estimators.py
-badd +0 campaign.py
+badd +13 textmining/__init__.py
+badd +1 textmining/estimators.py
+badd +1 textmining/hyperoptimizers.py
+badd +1 textmining/predictors.py
+badd +1 textmining/preprocessing.py
+badd +1 textmining/structures.py
 argglobal
 silent! argdel *
-edit campaign.py
+edit textmining/__init__.py
 set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 119 + 119) / 239)
-exe 'vert 2resize ' . ((&columns * 119 + 119) / 239)
 argglobal
-let s:l = 93 - ((0 * winheight(0) + 30) / 60)
+let s:l = 13 - ((12 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-93
+13
 normal! 0
-lcd ~/
-wincmd w
-argglobal
-if bufexists('/Volumes/Projects/service-messages-ml/campaign.py') | buffer /Volumes/Projects/service-messages-ml/campaign.py | else | edit /Volumes/Projects/service-messages-ml/campaign.py | endif
-let s:l = 24 - ((0 * winheight(0) + 30) / 60)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-24
-normal! 0
-lcd ~/
-wincmd w
-exe 'vert 1resize ' . ((&columns * 119 + 119) / 239)
-exe 'vert 2resize ' . ((&columns * 119 + 119) / 239)
+lcd /Volumes/Projects/service-messages-ml
 tabnext 1
-if exists('s:wipebuf')
+if exists('s:wipebuf') && s:wipebuf != bufnr('%')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf

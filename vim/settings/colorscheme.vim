@@ -1,3 +1,3 @@
 " Background
 colorscheme solarized
-set background=dark
+set background=light
