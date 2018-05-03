@@ -158,21 +158,13 @@ declare -a FILES_TO_SYMLINK=(
   'zshrc'
   'bashrc'
   'vimrc'
-  'tmux-conf'
+  'tmux.conf'
   'tmux-powerlinerc'
   'triforce.conf'
   'bash_profile'
   'vim'
   'tmux'
   'nvim'
-  'karabiner'
-  'alacritty'
-
-
-  'git/gitattributes'
-  'git/gitconfig'
-  'git/gitignore'
-
 )
 
 # FILES_TO_SYMLINK="$FILES_TO_SYMLINK .vim bin" # add in vim and the binaries
@@ -217,39 +209,6 @@ main() {
   done
 
   unset FILES_TO_SYMLINK
-
-  # Copy binaries
-  ln -fs $HOME/dotfiles/bin $HOME
-
-  declare -a BINARIES=(
-    'batcharge.py'
-    'crlf'
-    'dups'
-    'git-delete-merged-branches'
-    'nyan'
-    'passive'
-    'proofread'
-    'ssh-key'
-    'weasel'
-  )
-
-  for i in ${BINARIES[@]}; do
-    echo "Changing access permissions for binary script :: ${i##*/}"
-    chmod +rwx $HOME/bin/${i##*/}
-  done
-
-  unset BINARIES
-
-  # Symlink online-check.sh
-  ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
-
-  # Write out current crontab
-  crontab -l > mycron
-  # Echo new cron into cron file
-  echo "* * * * * ~/online-check.sh" >> mycron
-  # Install new cron file
-  crontab mycron
-  rm mycron
 
 }
 
@@ -298,37 +257,5 @@ install_zsh () {
 main
 # install_zsh
 
-###############################################################################
-# Atom                                                                        #
-###############################################################################
-
-# Copy over Atom configs
-#cp -r atom/packages.list $HOME/.atom
-
-# Install community packages
-#apm list --installed --bare - get a list of installed packages
-#apm install --packages-file $HOME/.atom/packages.list
-
-###############################################################################
-# Zsh                                                                         #
-###############################################################################
-
-# Install Zsh settings
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
-
-
-###############################################################################
-# Terminal & iTerm 2                                                          #
-###############################################################################
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
-# Install the Solarized Dark theme for iTerm
-open "${HOME}/dotfiles/iterm/themes/Solarized Dark.itermcolors"
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-# Reload zsh settings
+# Reload bash zsh settings
 source ~/.zshrc
