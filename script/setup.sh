@@ -173,7 +173,7 @@ declare -a FILES_TO_SYMLINK=(
 
 for i in ${FILES_TO_SYMLINK[@]}; do
   echo "Moving any existing dotfiles from ~ to $dir_backup"
-  mv ~/.${i##*/} ~/dotfiles_old/
+  mv ~/.${i##*/} $dir_backup
 done
 
 
