@@ -1,4 +1,6 @@
 # Terminal macOS keybindings
+OS=`uname`
+if [[ $OS == 'Darwin' ]]; then
 # Resume allows to return to a backgroud process with ^Z
 function resume {
   fg
@@ -17,4 +19,5 @@ if [[ $SHLL =~ 'bash' ]] || [[ $SHLL =~ ' sh' ]]; then
 elif [[ $SHLL =~ 'zsh' ]]; then
     zle -N resume;
     bindkey "^Z" resume;
+fi
 fi
