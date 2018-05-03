@@ -258,4 +258,4 @@ main
 # install_zsh
 
 # Reload bash zsh settings
-source ~/.zshrc
+# source ~/.zshrc
