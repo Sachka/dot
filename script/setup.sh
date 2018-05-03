@@ -57,9 +57,9 @@ get_os() {
   local os=""
 
   if [ "$OS_NAME" == "Darwin" ]; then
-    os="osx"
+    os="macos"
   elif [ "$OS_NAME" == "Linux" ] && [ -e "/etc/lsb-release" ]; then
-    os="ubuntu"
+    os="linux"
   fi
 
   printf "%s" "$os"
