@@ -54,12 +54,10 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		#"xkb_layout 125 117" \
 		#"lan_ip 24 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
                 "wan_ip 21 27" \
-                "date_day 235 136" \
+                "date_day 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		#"date 23 136" \
 		#"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-                #"time 27 fg=brightred  ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-                "edt_time 235 166 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"cest_time 236 166 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+                "time 27 fg=brightred  ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
                 "battery 137 160" \
 		#"hostname 33 0" \
         )

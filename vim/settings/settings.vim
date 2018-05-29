@@ -95,3 +95,4 @@ let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:gitgutter_signs = 0
 let g:gitgutter_override_sign_column_highlight = 0
+let g:tagbar_autofocus = 1

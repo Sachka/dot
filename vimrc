@@ -25,15 +25,15 @@ Plug 'tpope/vim-obsession'
 " eunuch.vim
 Plug 'tpope/vim-eunuch'
 " vinegar.vim
-Plug 'tpope/vim-vinegar'
+"Plug 'tpope/vim-vinegar'
 " fugitive.vim
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 " db.vim
 Plug 'tpope/vim-db'
 " The-NERD-Commenter
 Plug 'scrooloose/nerdcommenter'
 " NERDTree
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 " Evanesco (Automatically clears search highlight)
 Plug 'pgdouyon/vim-evanesco'
 " Better Whitespace
@@ -50,8 +50,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'edkolev/promptline.vim'
 " dracula theme
 Plug 'dracula/vim'
-" NeoSolarized
-Plug 'iCyMind/NeoSolarized'
 " deoplete
 Plug 'Shougo/deoplete.nvim'
 " nvim-yarp (deoplete dependency)
@@ -70,8 +68,6 @@ Plug 'heavenshell/vim-pydocstring'
 Plug 'Yggdroot/indentLine'
 " rainbow parentheses
 Plug 'kien/rainbow_parentheses.vim'
-" fzf
-Plug '/usr/local/opt/fzf'
 " window restore
 Plug 'vim-scripts/ZoomWin'
 " airline clock
@@ -80,8 +76,6 @@ Plug 'enricobacis/vim-airline-clock'
 Plug 'majutsushi/tagbar'
 " colorizer
 Plug 'chrisbra/Colorizer'
-" base16
-Plug 'chriskempson/base16-vim'
 " All Plugins must be added before the following line
 "------------------------------------------------------------------------------"
 call plug#end()
