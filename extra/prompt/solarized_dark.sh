@@ -3,6 +3,10 @@
 #
 HNAME=`hostname -s`
 OS=`uname`
+if [ ! -v "$VIRTUAL_ENV" ]; then
+    VIRTUAL_ENV="NE";
+fi
+
 function __promptline_host {
   local only_if_ssh="0"
 
@@ -24,7 +28,7 @@ function __promptline_ps1 {
   slice_prefix="${a_bg}${sep}${a_fg}${a_bg}${space}" slice_suffix="$space${a_sep_fg}" slice_joiner="${a_fg}${a_bg}${alt_sep}${space}" slice_empty_prefix="${a_fg}${a_bg}${space}"
   [ $is_prompt_empty -eq 1 ] && slice_prefix="$slice_empty_prefix"
   # section "a" slices
-  __promptline_wrapper "$(__promptline_host)" "$slice_prefix" "$slice_suffix" && { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
+  __promptline_wrapper "$(__promptline_host) [`basename $VIRTUAL_ENV`]" "$slice_prefix" "$slice_suffix"&& { slice_prefix="$slice_joiner"; is_prompt_empty=0; }
 
   # section "b" header
   slice_prefix="${b_bg}${sep}${b_fg}${b_bg}${space}" slice_suffix="$space${b_sep_fg}" slice_joiner="${b_fg}${b_bg}${alt_sep}${space}" slice_empty_prefix="${b_fg}${b_bg}${space}"
